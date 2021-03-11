@@ -39,6 +39,8 @@ public abstract class Aplicant{
 		this.punctaj = punctaj;
 	}
 	
+	public abstract float getSumaFinantata();
+	
 	
 
 	

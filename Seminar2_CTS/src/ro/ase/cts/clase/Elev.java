@@ -4,6 +4,7 @@ import java.util.Arrays;
 public class Elev extends Aplicant{
 	private int clasa;
 	private String tutore;
+	private static float sumaFinantare=30;
 	
 	public int getClasa() {
 		return clasa;
@@ -42,5 +43,18 @@ public class Elev extends Aplicant{
 		System.out.println("Angajatul "+getNume()+" "+getPrenume()+" primeste"+s+" Euro/zi in proiect.");
 		return s;
 	}
+	@Override
+	public float getSumaFinantata() {
+		// TODO Auto-generated method stub
+		return sumaFinantare;
+	}
+	public static float getSumaFinantare() {
+		return sumaFinantare;
+	}
+	public static void setSumaFinantare(float sumaFinantare) {
+		Elev.sumaFinantare = sumaFinantare;
+	}
+	
+	
 	
 }
