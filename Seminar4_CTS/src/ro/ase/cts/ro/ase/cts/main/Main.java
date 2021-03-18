@@ -18,7 +18,11 @@ public class Main {
         System.out.println(cl1);
         System.out.println(cl2);
 
-        //Test
+        cl1.setNume("Clinica 1");
+        cl2.setNumeMedici(45);
+
+        System.out.println(cl1);
+        System.out.println(cl2);
 
     }
 }
