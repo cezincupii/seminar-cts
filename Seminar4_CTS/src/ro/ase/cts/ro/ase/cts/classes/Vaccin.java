@@ -12,6 +12,8 @@ public class Vaccin {
         return instanta;
     }
 
+    //T
+
 
     public void setNumeProducator(String numeProducator) {
         this.numeProducator = numeProducator;
