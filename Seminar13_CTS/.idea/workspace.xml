@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="288a8a0a-8552-48b4-8340-4f90de9ad744" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/classes/Grupa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/classes/IStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/classes/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/tests/GrupaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/classes/FakeStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/classes/StudentDummy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/classes/StudentStub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/suite/GrupaWithFakeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/suite/SuitaCompleta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/suite/SuitaCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/suite/TesteGetPromovabilitate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/suite/TesteNormale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/suite/TesteUrgente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/tests/StudentDummyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/tests/TestCaseGetPromovabilitate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
@@ -18,6 +25,8 @@
       <change beforePath="$PROJECT_DIR$/../Seminar12_CTS/out/production/Seminar12_CTS/clase/StudentTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Seminar12_CTS/out/production/Seminar12_CTS/clase/StudentTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Seminar12_CTS/src/clase/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Seminar12_CTS/src/clase/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Seminar12_CTS/src/clase/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Seminar12_CTS/src/clase/StudentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ro/ase/cts/classes/Grupa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ro/ase/cts/classes/Grupa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Seminar3_CTS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Seminar3_CTS/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Seminar5_CTS/Seminar5_CTS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Seminar5_CTS/Seminar5_CTS.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Seminar7_CTS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Seminar7_CTS/.idea/workspace.xml" afterDir="false" />
@@ -49,22 +58,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/classes/Grupa.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+            <state relative-caret-position="463">
+              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#555#556#0" expanded="true" />
                 <element signature="e#585#586#0" expanded="true" />
                 <element signature="e#646#647#0" expanded="true" />
                 <element signature="e#692#693#0" expanded="true" />
+                <element signature="e#740#741#0" expanded="true" />
+                <element signature="e#776#777#0" expanded="true" />
                 <element signature="e#742#743#0" expanded="true" />
                 <element signature="e#779#780#0" expanded="true" />
               </folding>
@@ -73,44 +83,104 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/tests/GrupaTest.java">
+        <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/classes/FakeStudent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="839">
-              <caret line="56" column="19" lean-forward="true" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+            <state relative-caret-position="595">
+              <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#835#836#0" expanded="true" />
-                <element signature="e#880#881#0" expanded="true" />
+                <element signature="e#447#448#0" expanded="true" />
+                <element signature="e#481#482#0" expanded="true" />
+                <element signature="e#536#537#0" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#627#628#0" expanded="true" />
+                <element signature="e#654#655#0" expanded="true" />
+                <element signature="e#1036#1037#0" expanded="true" />
+                <element signature="e#1064#1065#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/classes/Student.java">
+        <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/suite/SuitaCompleta.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="63" lean-forward="true" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/suite/TesteGetPromovabilitate.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/suite/TesteNormale.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/suite/TesteUrgente.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/tests/StudentDummyTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/tests/GrupaTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#344#345#0" expanded="true" />
-                <element signature="e#371#372#0" expanded="true" />
-                <element signature="e#411#412#0" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#481#482#0" expanded="true" />
-                <element signature="e#508#509#0" expanded="true" />
-                <element signature="e#547#548#0" expanded="true" />
-                <element signature="e#577#578#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/classes/IStudent.java">
+        <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/suite/GrupaWithFakeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="315">
+              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/suite/SuitaCustom.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,6 +190,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -131,16 +202,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/ro/ase/cts/classes/Student.java" />
-        <option value="$PROJECT_DIR$/src/ro/ase/cts/classes/Grupa.java" />
         <option value="$PROJECT_DIR$/src/ro/ase/cts/classes/IStudent.java" />
         <option value="$PROJECT_DIR$/src/ro/ase/cts/tests/GrupaTest.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+        <option value="$PROJECT_DIR$/src/ro/ase/cts/tests/GrupaTestSetUp.java" />
+        <option value="$PROJECT_DIR$/src/ro/ase/cts/classes/StudentDummy.java" />
+        <option value="$PROJECT_DIR$/src/ro/ase/cts/classes/StudentStub.java" />
+        <option value="$PROJECT_DIR$/src/ro/ase/cts/tests/StudentDummyTest.java" />
+        <option value="$PROJECT_DIR$/src/ro/ase/cts/tests/TestCaseGetPromovabilitate.java" />
+        <option value="$PROJECT_DIR$/src/ro/ase/cts/classes/Grupa.java" />
+        <option value="$PROJECT_DIR$/src/ro/ase/cts/classes/FakeStudent.java" />
+        <option value="$PROJECT_DIR$/src/ro/ase/cts/suite/SuitaCompleta.java" />
+        <option value="$PROJECT_DIR$/src/ro/ase/cts/suite/TesteGetPromovabilitate.java" />
+        <option value="$PROJECT_DIR$/src/ro/ase/cts/suite/GrupaWithFakeTest.java" />
+        <option value="$PROJECT_DIR$/src/ro/ase/cts/suite/SuitaCustom.java" />
       </list>
     </option>
   </component>
@@ -177,6 +251,27 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="cts" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Seminar13_CTS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Seminar13_CTS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cts" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Seminar13_CTS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Seminar13_CTS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cts" type="462c0819:PsiDirectoryNode" />
+              <item name="suite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Seminar13_CTS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Seminar13_CTS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cts" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -188,6 +283,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -274,40 +370,56 @@
     <history-entry file="GrupaTest - 2021.05.27 at 08h 28m 07s.xml">
       <configuration name="GrupaTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GrupaTestSetUp - 2021.05.27 at 09h 14m 06s.xml">
+      <configuration name="GrupaTestSetUp" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1792" height="1097" extended-state="6" />
+    <frame x="0" y="27" width="1792" height="1093" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.268" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27085716" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32935324" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32935324" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32867134" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/tests.java" />
+    <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/classes/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/classes/IStudent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -315,51 +427,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/classes/Student.java">
+    <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/classes/StudentDummy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/classes/StudentStub.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/tests/GrupaTestSetUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/tests/TestCaseGetPromovabilitate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/tests.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/tests/GrupaTest.java">
+    <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/tests/StudentDummyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="839">
-          <caret line="56" column="19" lean-forward="true" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#880#881#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/classes/Grupa.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+        <state relative-caret-position="463">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#555#556#0" expanded="true" />
             <element signature="e#585#586#0" expanded="true" />
             <element signature="e#646#647#0" expanded="true" />
             <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
             <element signature="e#742#743#0" expanded="true" />
             <element signature="e#779#780#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/classes/FakeStudent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
+          <folding>
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#1036#1037#0" expanded="true" />
+            <element signature="e#1064#1065#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/suite/SuitaCompleta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="63" lean-forward="true" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/suite/TesteGetPromovabilitate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/suite/TesteNormale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/suite/TesteUrgente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/tests/GrupaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/suite/GrupaWithFakeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ro/ase/cts/suite/SuitaCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
